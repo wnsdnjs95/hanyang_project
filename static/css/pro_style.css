@@ -1,0 +1,112 @@
+.job {
+    text-decoration: underline;
+}
+.logo {
+    border: 1px solid white;
+    border-radius: 20px;
+}
+#main_frame {
+    padding: 10px 0 20%;
+    border: 3px solid black;
+    border-radius: 20px;
+    margin: 20px auto 30%;
+}
+h1 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+body {
+    background-color: burlywood;
+}
+.container {
+    padding: 3px 3px 0px 3px;
+    border: 3px solid black;
+    border-radius: 20px;
+}
+a {
+    color: darkred;
+    text-decoration: none;
+}
+#header {
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 5px;
+}
+.ranks {
+    line-height: 150%;
+}
+.list:visited {
+    text-decoration: none;
+    color: #333333;
+}
+.samy {
+    border: 2px solid black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+.job_home {
+    border: 1px solid black;
+}
+.list_title {
+    display: none;
+}
+.what_hobby {
+    background-color: dimgray;
+    border: 1px solid black;
+    color: white;
+}
+.what_me {
+    background-color: darkslateblue;
+    border: 1px solid black;
+    color: white;
+}
+.what_interest {
+    background-color: darkslategray;
+    border: 1px solid black;
+    color: white;
+}
+.list_one {
+    background-color: darkslateblue;
+    color: white;
+    margin-top: -8px;
+    border: 1px solid black;
+    list-style-type: none;
+}
+.list_two {
+    background-color: dimgray;
+    color: white;
+    margin-top: -8px;
+    border: 1px solid black;
+    list-style-type: none;
+}
+.list_three {
+    background-color: darkslategray;
+    color: white;
+    margin-top: -8px;
+    border: 1px solid black;
+    list-style-type: none;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+#body {
+    width: 400px;
+    height: 50px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+p {
+    padding: 9px;
+    margin-top: 8px;
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>jobsearch</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/pro_style.css') }}">
+    <style>
+        #right {
+            position: relative;
+            top: 50px;
+            float: right;
+            color: darkred;
+            font-size: 30px;
+        }
+    </style>
+
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script>
+
+        $(document).ready(function () {
+            $(".what_me").click(function () {
+                if($(".list_one").css("display") == 'none') {
+                    $(".list_one").show();
+                } else {
+                    $(".list_one").hide();
+                }
+            });
+            $(".what_hobby").click(function () {
+                if($(".list_two").css("display") == 'none') {
+                    $(".list_two").show();
+                } else {
+                    $(".list_two").hide();
+                }
+            });
+            $(".what_interest").click(function () {
+                if($(".list_three").css("display") == 'none') {
+                    $(".list_three").show();
+                } else {
+                    $(".list_three").hide();
+                }
+            });
+
+        });
+
+    </script>
+  </head>
+  <body>
+
+      <div>
+
+        <div id="header">
+
+            <b>취업 사이트 모음</b>
+
+        </div>
+
+        <div class="container">
+
+            <span>
+
+                <a href="/">
+                <img class="logo" src="{{ url_for('static', filename='css/image/logo.png') }}" width="100", height="90">
+                </a>
+
+                <div id="right">
+                <b>
+                    <span class="job"><a href="/jobkor">잡코리아</a></span>
+                    <span class="job"><a href="/saram">사람인</a></span>
+                    <span class="job"><a href="/incruit">인크루트</a></span>
+                    <span class="job"><a href="/career">커리어</a></span>
+                </b>
+                </div>
+
+            </span>
+
+        </div>
+
+        <div id="main_frame">
+
+            <h1>소개</h1>
+
+            <div>
+
+                <a class="links" href="https://www.instagram.com/jdun__10.28/?hl=ko" target="_blank">
+                <img class="samy" src="{{ url_for('static', filename='css/image/samy.jpg') }}" width="300", height="300">
+                </a>
+                <div class="insta" style="font-size: small; text-align: center">* 누르면 인스타로 이동</div>
+
+
+            </div>
+
+            <div id="body">
+
+                <p class="what_me">나는 누구일까요?
+
+                <ul class="list_title list_one">
+                    <li>이름 : 양준원</li>
+                    <li>한양대 신문방송학과 4학년</li>
+                    <li>95년생 경기도 의왕 거주중</li>
+                </ul>
+
+                <p class="what_hobby">취미가 뭘까요?
+
+                <ul class="list_title list_two">
+                    <li>게임</li>
+                    <li>영화보기</li>
+                    <li>맛집 투어</li>
+                </ul>
+
+                <p class="what_interest">요즘 관심 있는 것들...
+
+                <ul class="list_title list_three">
+                    <li>파이썬</li>
+                    <li>취업</li>
+                    <li>보라카이 여행정보</li>
+                </ul>
+
+
+
+            </div>
+
+
+        </div>
+        <div class="footer">
+
+            <p>
+                연락처 : didwnsdnjs0424@gmail.com / 010-2908-8803
+            </p>
+
+        </div>
+      </div>
+  </body>
+</html>

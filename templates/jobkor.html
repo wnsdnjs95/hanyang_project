@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jobkorea Info</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/pro_style.css') }}">
+    <style>
+        #right {
+            position: relative;
+            top: 50px;
+            float: right;
+            color: darkred;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+  <div>
+    <div id="header">
+        <img class="job_home" src="{{ url_for('static', filename='css/image/jobkor.jpg') }}" width="200", height="80">
+    </div>
+    <div class="container">
+        <span>
+            <a href="/">
+            <img class="logo" src="{{ url_for('static', filename='css/image/logo.png') }}" width="100", height="90">
+            </a>
+        <div id="right">
+            <b>
+                <span class="job"><a href="/jobkor">잡코리아</a></span>
+                <span class="job"><a href="/saram">사람인</a></span>
+                <span class="job"><a href="/incruit">인크루트</a></span>
+                <span class="job"><a href="/career">커리어</a></span>
+            </b>
+        </div>
+        </span>
+    </div>
+    <div id="main_frame">
+        <b>
+        <ul>
+        {% for i in range(0,leng1) %}
+            <a class="list" href="http://www.jobkorea.co.kr/{{data1_href[i]}}" target="_blank">
+            <li class="ranks">{{ data1[i] }}</li>
+            </a>
+        {% endfor %}
+        </ul>
+        </b>
+    </div>
+    <div class="footer">
+
+        <p>
+            연락처 : didwnsdnjs0424@gmail.com / 010-2908-8803
+        </p>
+
+    </div>
+  </div>
+</body>
+</html>
